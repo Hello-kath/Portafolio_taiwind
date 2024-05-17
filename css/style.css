@@ -1,0 +1,21 @@
+
+/* fuente arimo */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Protest+Riot&family=Schoolbell&family=Stalinist+One&display=swap'); 
+
+/* Fuente Schoolbell */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Lexend+Deca:wght@100..900&family=Protest +Riot&family=Schoolbell&family=Estalinista+Uno&display=swap');
+
+/* estilos para el titulo hello_kath */
+.hello{
+    font-family: "Schoolbell";
+}
+
+.conGatito{
+    background-color: blue;
+    width: 55%;
+    margin: 0 auto;
+}
+
+.imagengatito{
+   width: 150vw;
+}
