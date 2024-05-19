@@ -1,36 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello_kath</title>
     <link rel="stylesheet" href="/css/style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
-<body>
-    <!-- contenedor principal -->
-    <section class="w-dvw h-dvh bg-slate-950 ">
-        <!-- contenedor del gif gatito -->
-        <article class="conGatito ">
-            <img class=" imagengatito" src="/img/gatito.gif" alt="gif de gatito">
-            <h1 class="hello">Hello_kath</h1>
-        </article>
 
-        <!-- contenedor flecha -->
-        <article class=" w-20 h-1 bg-slate-800">
-            <img src="/img/flecha_abajo.gif" alt="flecha">
-        </article>
-    </section>
+<body class="scroll-smooth">
 
     <!-- CONTENEDOR DEL CONTENIDO, HOME Y DEMAS -->
-    <main>
+    <main class="w-screen overflow-hidden">
+        <!-- contenedor principal gif gatito -->
+        <section class="h-screen bg-black p-4 flex-col flex items-center scroll-snap-target">
+            <!-- contenedor del gif gatito -->
+            <article class="w-1/3 h-1/2 flex-grow flex items-center justify-center border-none ">
+                <img class="w-80 h-64 object-cover" src="./img/gato.png (1).gif" alt="gif de gatito">
+
+            </article>
+
+            <!-- contenedor flecha -->
+            <article class=" w-1/3 h-1/2 flex-col flex items-center">
+                <h1 class="hello text-white text-5xl text-center mt-10">Hello_kath</h1>
+                <img class="w-16 mt-9 object-cover" src="./img/flecha_abajo.gif" alt="flecha">
+            </article>
+        </section>
+
+
         <!-- section 1 home -->
-        <section>
+        <section class="h-screen bg-red-200 scroll-snap-target p-0 m-0 bg-[url('./img/fondo1.jpg')]">
+            <!-- header -->
+            <header class="w-full medida1 py-4 text-white flex ">
+                <!-- menu -->
+                <nav class="flex-shrink-0 ml-80 mt-2 p-0">
+                    <!-- listas -->
+                    <ul class="flex ">
+                        <!-- items de las listas -->
+                        <button
+                            class="text-2xl ml-12 border p-1 pl-3.5 pr-3.5 cursor:pointer hover:bg-gray-200 hover:text-black hello">Home</button>
+                        <button
+                            class="text-2xl ml-12 cursor:pointer border p-1 pl-3.5 pr-3.5 hover:bg-gray-200 hover:text-black hello">Acerca
+                            de mi</button>
+                        <button
+                            class="text-2xl ml-12 border p-1 pl-3.5 pr-3.5 hover:bg-gray-200 hover:text-black hello">Mis
+                            proyectos</button>
+                        <button
+                            class="text-2xl ml-12 border p-1 pl-3.5 pr-3.5 hover:bg-gray-200 hover:text-black hello ">Dossier</button>
+                    </ul>
+
+                </nav>
+            </header>
+            <!-- seccion que contiene texto y img -->
+            <section class=" row-span-2 medida2 flex">
+                <!-- article del texto -->
+                <article class="basis-3/6 text-white">
+                    <!-- article que contiene el titulo -->
+                    <article class="w-full h-28 h-1/6 flex items-center justify-center border-none ">
+                        <h1 class="hello text-4xl mt-20">Katherine Vasquez</h1>
+                    </article>
+                    <!-- contenedor de texto -->
+                    <article class=" w-full h-[80%] flex justify-center">
+                        <article class="h-[75%] w-[88%] mt-6 bg-black opacity-50">
+                            <p class="arimo text-xl p-5 text-center leading-relaxed text-white ">¡Hola soy Kath!, estudiante de
+                                análisis y desarrollo de software del CTPI SENA regional Cauca, me considero una persona
+                                dedicada y creativa en mi trabajo, además siempre tengo ideas innovadoras para el
+                                desarrollo de proyectos de software. Actualmente estoy desarrollando un proyecto para la
+                                empresa AROG, la cual tiene un enfoque a la protección del medio ambiente. mi rama de
+                                interés es el full-stack.</p>
+                        </article>
+                    </article>
+                </article>
+
+                <!-- article de la foto de perfil y redes -->
+                <article class="w-3/6 text-white">
+                    <!-- article que contiene la foto de perfil -->
+                    <article class="w-[100%] h-[75%] flex ">
+                        <img class="w-80 border rounded-full mx-48 my-12" src="./img/kathee.jpg" alt="">
+                    </article>
+                    <!-- article que contiene las redes -->
+                    <article class="h-[25%]  flex justify-center">
+                        <section class="flex my-8 space-x-14">
+                            <article class=" ">
+                              <i class="fa-brands fa-whatsapp scale-x-[260%] scale-y-[220%] ml-9 "></i>
+                              <br><span class="flex pt-1">3135037822</span>
+                            </article>
+                            <article class="">
+                              <i class="fa-brands fa-github scale-x-[260%] scale-y-[220%] ml-6"></i>
+                              <br><span class="flex pt-1">Kathe322</span>
+                            </article>
+                            <article>
+                              <i class="fa-brands fa-instagram scale-x-[260%] scale-y-[220%] ml-9"></i>
+                              <br><span class="flex pt-1">@katherine</span>
+                            </article>
+                          </section>
+                    </article>
+                </article>
+
+                
+            </section>
+
 
         </section>
 
         <!-- section 2 hacerca de mi -->
-        <section>
+        <section class="h-screen overflow-hidden bg-red-400 p-2 scroll-snap-target">
 
         </section>
 
@@ -60,7 +142,7 @@
         </section>
 
     </main>
-    
+
     <!-- pie de pagina -->
     <footer>
 
@@ -68,4 +150,5 @@
 
     <script src="/js/app.js"></script>
 </body>
+
 </html>

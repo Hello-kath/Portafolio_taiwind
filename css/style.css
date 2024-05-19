@@ -9,13 +9,20 @@
 .hello{
     font-family: "Schoolbell";
 }
-
-.conGatito{
-    background-color: blue;
-    width: 55%;
-    margin: 0 auto;
+.arimo{
+  font-family: "Arimo";
 }
 
-.imagengatito{
-   width: 150vw;
-}
+* {
+    box-sizing: border-box;
+    border: none;
+  }
+
+  .medida1{
+    height: 13%;
+
+  }
+
+  .medida2{
+    height: 87%;
+  }
