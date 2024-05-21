@@ -16,12 +16,12 @@
     />
 </head>
 
-<body class="scroll-smooth">
+<body class="overflow-x-hidden">
 
     <!-- CONTENEDOR DEL CONTENIDO, HOME Y DEMAS -->
-    <main class="w-screen overflow-hidden">
+    <main class="w-screen">
         <!-- contenedor principal gif gatito -->
-        <section class="h-screen bg-black p-4 flex-col flex items-center scroll-snap-target">
+        <section class="min-h-screen bg-black p-4 flex-col flex items-center scroll-snap-target">
             <!-- contenedor del gif gatito -->
             <article class="w-1/3 h-1/2 flex-grow flex items-center justify-center border-none ">
                 <img class="w-80 h-64 object-cover" src="./img/gato.png (1).gif" alt="gif de gatito">
@@ -37,7 +37,7 @@
 
 
         <!-- section 1 home -->
-        <section class="h-screen bg-red-200 scroll-snap-target p-0 m-0 bg-[url('./img/fondo1.jpg')]">
+        <section class="min-h-screen w-screen bg-red-200 scroll-snap-target p-0 m-0 bg-cover bg-center" style="background-image: url('./img/fondo1.jpg');">
             <!-- header -->
             <header class="w-full medida1 py-4 text-white flex ">
                 <!-- menu -->
@@ -69,7 +69,7 @@
                     </article>
                     <!-- contenedor de texto -->
                     <article class=" w-full h-[80%] flex justify-center">
-                        <article class="h-[75%] w-[88%] mt-6 bg-black opacity-50">
+                        <article class="h-[75%] w-[88%] mt-6 bg-black/50 backdrop-black-sm ">
                             <p class="arimo text-xl p-5 text-center leading-relaxed text-white ">¡Hola soy Kath!, estudiante de
                                 análisis y desarrollo de software del CTPI SENA regional Cauca, me considero una persona
                                 dedicada y creativa en mi trabajo, además siempre tengo ideas innovadoras para el
@@ -103,16 +103,35 @@
                             </article>
                           </section>
                     </article>
-                </article>
-
-                
+                </article>  
             </section>
-
-
         </section>
 
-        <!-- section 2 hacerca de mi -->
-        <section class="h-screen overflow-hidden bg-red-400 p-2 scroll-snap-target">
+        <!-- section 2 acerca de mi -->
+        <section class="h-screen overflow-hidden bg-red-200 scroll-snap-target">
+            <!-- section de imagen y texto -->
+            <section class="h-[75%] w-full bg-red-900 flex">
+                <!-- article que contiene la imagen isquierda -->
+                <article class="h-[100%] w-[40%] bg-red-100">
+                    <h1 class="hello text-4xl mt-2 text-center">Acerca de mi</h1>
+                    <img class="rounded-lg w-[19rem] mt-3 mx-28" src="/img/anime.png" alt="">
+                </article>
+                <!-- article que contiene el texto derecha-->
+                <article class="h-[100%] w-[60%] bg-red-300">
+                    <h3 class="hello text-2xl mt-20">Mi experiencia:</h3>
+                    <p class="arimo text-base/5 ml-6 text-left mr-4">He adquirido experiencia trabajando en proyectos personales y academicos en el que he desarrollando aplicaciones web y  móviles utilizando tecnologías como; HTML, CSS, JavaScript, MySQL. Ademas durante mi proceso formativo he aprendido a trabajar en equipo, gestionar proyectos, resolver problemas de forma creativa y cumplir con los plazos y objetivos.
+                    </p>
+                    <br><h3 class="hello text-2xl">Mis objetivos:</h3>
+                    <ul class="list-disc pl-5 ml-6 arimo text-base/5">
+                        <li>Hacer un proyecto que sea significativo y tenga un impacto positivo en el mundo</li>
+                        <li>Aprender sobre inteligencia artificial con énfasis en la psicología. para desarrollar sistemas de IA más centrados en el ser humano y mejorar la interacción. </li>
+                        <li>Ser un Especialista en Diseño de Interacción reconocido por crear interacciones fluidas e intuitivas que potencien la experiencia del usuario en diversos productos digitales.</li>
+                    </ul>
+                   
+                </article>
+            </section>
+            <!-- section para mis habilidades -->
+            <section class="h-[25%] w-full bg-red-600"></section>
 
         </section>
 
