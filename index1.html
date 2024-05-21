@@ -1,71 +1,255 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello_kath</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <!-- contenedor principal -->
-    <section class="w-dvw h-dvh bg-slate-950 ">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="overflow-x-hidden">
+    <!-- CONTENEDOR DEL CONTENIDO, HOME Y DEMAS -->
+    <main class="w-screen">
+      <!-- contenedor principal gif gatito -->
+      <section
+        class="w-screen min-h-screen bg-black p-4 flex-col flex items-center scroll-snap-target"
+      >
         <!-- contenedor del gif gatito -->
-        <article class="conGatito ">
-            <img class=" imagengatito" src="/img/gatito.gif" alt="gif de gatito">
-            <h1 class="hello">Hello_kath</h1>
+        <article
+          class="w-1/3 h-1/2 flex-grow flex items-center justify-center border-none h"
+        >
+          <img
+            class="w-80 h-64 object-cover"
+            src="./img/gato.png (1).gif"
+            alt="gif de gatito"
+          />
         </article>
 
         <!-- contenedor flecha -->
-        <article class=" w-20 h-1 bg-slate-800">
-            <img src="/img/flecha_abajo.gif" alt="flecha">
+        <article class="w-1/3 h-1/2 flex-col flex items-center">
+          <h1 class="hello text-white text-5xl text-center mt-10">
+            Hello_kath
+          </h1>
+          <img
+            class="w-16 mt-9 object-cover"
+            src="./img/flecha_abajo.gif"
+            alt="flecha"
+          />
         </article>
-    </section>
+      </section>
 
-    <!-- CONTENEDOR DEL CONTENIDO, HOME Y DEMAS -->
-    <main>
-        <!-- section 1 home -->
-        <section>
+      <!-- section 1 home -->
+      <section
+        class="min-h-screen w-screen bg-red-200 scroll-snap-target p-0 m-0 bg-cover bg-center"
+        style="background-image: url('./img/fondo1.jpg')"
+      >
+        <!-- header -->
+        <header class="w-full medida1 py-4 text-white flex">
+          <!-- menu -->
+          <nav class="flex-shrink-0 ml-80 mt-2 p-0">
+            <!-- listas -->
+            <ul class="flex">
+              <!-- items de las listas -->
+              <button
+                class="text-2xl ml-12 border p-1 pl-3.5 pr-3.5 cursor:pointer hover:bg-gray-200 hover:text-black hello"
+              >
+                Home
+              </button>
+              <button
+                class="text-2xl ml-12 cursor:pointer border p-1 pl-3.5 pr-3.5 hover:bg-gray-200 hover:text-black hello"
+              >
+                Acerca de mi
+              </button>
+              <button
+                class="text-2xl ml-12 border p-1 pl-3.5 pr-3.5 hover:bg-gray-200 hover:text-black hello"
+              >
+                Mis proyectos
+              </button>
+              <button
+                class="text-2xl ml-12 border p-1 pl-3.5 pr-3.5 hover:bg-gray-200 hover:text-black hello"
+              >
+                Dossier
+              </button>
+            </ul>
+          </nav>
+        </header>
+        <!-- seccion que contiene texto y img -->
+        <section class="row-span-2 medida2 flex">
+          <!-- article del texto -->
+          <article class="basis-3/6 text-white">
+            <!-- article que contiene el titulo -->
+            <article
+              class="w-full h-28 h-1/6 flex items-center justify-center border-none"
+            >
+              <h1 class="hello text-4xl mt-20">Katherine Vasquez</h1>
+            </article>
+            <!-- contenedor de texto -->
+            <article class="w-full h-[80%] flex justify-center">
+              <article
+                class="h-[75%] w-[88%] mt-6 bg-black/50 backdrop-black-sm"
+              >
+                <p
+                  class="arimo text-xl p-5 text-center leading-relaxed text-white"
+                >
+                  ¡Hola soy Kath!, estudiante de análisis y desarrollo de
+                  software del CTPI SENA regional Cauca, me considero una
+                  persona dedicada y creativa en mi trabajo, además siempre
+                  tengo ideas innovadoras para el desarrollo de proyectos de
+                  software. Actualmente estoy desarrollando un proyecto para la
+                  empresa AROG, la cual tiene un enfoque a la protección del
+                  medio ambiente. mi rama de interés es el full-stack.
+                </p>
+              </article>
+            </article>
+          </article>
 
+          <!-- article de la foto de perfil y redes -->
+          <article class="w-3/6 text-white">
+            <!-- article que contiene la foto de perfil -->
+            <article class="w-[100%] h-[75%] flex">
+              <img
+                class="w-80 border rounded-full mx-48 my-12"
+                src="./img/kathee.jpg"
+                alt=""
+              />
+            </article>
+            <!-- article que contiene las redes -->
+            <article class="h-[25%] flex justify-center">
+              <section class="flex my-8 space-x-14">
+                <article class=" ">
+                  <i
+                    class="fa-brands fa-whatsapp scale-x-[260%] scale-y-[220%] ml-9"
+                  ></i>
+                  <br /><span class="flex pt-1">3135037822</span>
+                </article>
+                <article class="">
+                  <i
+                    class="fa-brands fa-github scale-x-[260%] scale-y-[220%] ml-6"
+                  ></i>
+                  <br /><span class="flex pt-1">Kathe322</span>
+                </article>
+                <article>
+                  <i
+                    class="fa-brands fa-instagram scale-x-[260%] scale-y-[220%] ml-9"
+                  ></i>
+                  <br /><span class="flex pt-1">@katherine</span>
+                </article>
+              </section>
+            </article>
+          </article>
         </section>
+      </section>
 
-        <!-- section 2 hacerca de mi -->
-        <section>
-
+      <!-- section 2 acerca de mi -->
+      <section class="h-screen overflow-hidden bg-[#04040c] scroll-snap-target">
+        <!-- section de imagen y texto -->
+        <section class="h-[75%] w-full flex text-white">
+          <!-- article que contiene la imagen isquierda -->
+          <article class="h-[100%] w-[40%]">
+            <h1 class="hello text-4xl mt-2 text-center">Acerca de mi</h1>
+            <img
+              class="rounded-lg w-[19rem] mt-3 mx-28"
+              src="/img/anime.png"
+              alt=""
+            />
+          </article>
+          <!-- article que contiene el texto derecha-->
+          <article class="h-[100%] w-[60%] text-white">
+            <h3 class="hello text-2xl mt-20">Mi experiencia:</h3>
+            <p class="arimo text-base/5 ml-6 text-left mr-4">
+              He adquirido experiencia trabajando en proyectos personales y
+              academicos en el que he desarrollando aplicaciones web y móviles
+              utilizando tecnologías como; HTML, CSS, JavaScript, MySQL. Ademas
+              durante mi proceso formativo he aprendido a trabajar en equipo,
+              gestionar proyectos, resolver problemas de forma creativa y
+              cumplir con los plazos y objetivos.
+            </p>
+            <br />
+            <h3 class="hello text-2xl">Mis objetivos:</h3>
+            <ul class="list-disc pl-5 ml-6 arimo text-base/5 mr-4">
+              <li>
+                Hacer un proyecto que sea significativo y tenga un impacto
+                positivo en el mundo
+              </li>
+              <li>
+                Aprender sobre inteligencia artificial con énfasis en la
+                psicología. para desarrollar sistemas de IA más centrados en el
+                ser humano y mejorar la interacción.
+              </li>
+              <li>
+                Ser un Especialista en Diseño de Interacción reconocido por
+                crear interacciones fluidas e intuitivas que potencien la
+                experiencia del usuario en diversos productos digitales.
+              </li>
+            </ul>
+          </article>
         </section>
-
-        <!-- section 3 mis proyectos-->
-        <section>
-
+        <!-- section para mis habilidades -->
+        <section class="h-[25%] w-full ">
+          <!-- article del texto -->
+          <article class=" w-full h-[30%] p-2">
+            <h3 class="hello text-3xl text-center text-white">Mis habilidades</h3>
+            
+            <img src="./img/flecha2-removebg-preview.png" alt="" srcset="">
+          </article>
+          <!-- article de los recuadros -->
+          <article
+            class="w-full h-[20%] flex justify-around absolute"
+          >
+            <li class=" p-3 hello h-[36%] w-[16%] list-none text-center bg-[#d37979]">
+              Adaptabilidad a cambios
+            </li>
+            <li
+              class=" p-3 hello h-[36%] w-[14%] mt-12 list-none text-center bg-[#d37979]"
+            >
+              Trabajo en equipo
+            </li>
+            <img class="absolute w-48" src="./img/flecha2-removebg-preview-left.png" alt="" srcset="">
+            <li
+              class="p-3 hello h-[36%] w-[14%] mt-12 list-none text-center bg-[#d37979]"
+            >
+              Comunicativa
+            </li>
+            <img src="./img/flecha2-removebg-preview.png" alt="" srcset="">
+            <li
+              class=" p-3 hello h-[36%] w-[14%] mt-12 list-none text-center bg-[#d37979]"
+            >
+              Responsable
+            </li>
+            <li class="p-3 hello h-[36%] w-[15%] list-none text-center bg-[#d37979]">
+              Creativa
+            </li>
+          </article>
         </section>
+      </section>
 
-        <!--section 4 proyectos ambientales -->
-        <section>
+      <!-- section 3 mis proyectos-->
+      <section></section>
 
-        </section>
+      <!--section 4 proyectos ambientales -->
+      <section></section>
 
-        <!-- section 5 proyectos propios -->
-        <section>
+      <!-- section 5 proyectos propios -->
+      <section></section>
 
-        </section>
+      <!-- section 6 practicas de maquetacion HTML y CSS -->
+      <section></section>
 
-        <!-- section 6 practicas de maquetacion HTML y CSS -->
-        <section>
-
-        </section>
-
-        <!-- section 7 Dossier -->
-        <section>
-
-        </section>
-
+      <!-- section 7 Dossier -->
+      <section></section>
     </main>
-    
-    <!-- pie de pagina -->
-    <footer>
 
-    </footer>
+    <!-- pie de pagina -->
+    <footer></footer>
 
     <script src="/js/app.js"></script>
-</body>
+  </body>
 </html>

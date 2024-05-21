@@ -10,3 +10,20 @@
     font-family: "Schoolbell";
 }
 
+.arimo{
+  font-family: "Arimo";
+}
+
+* {
+    box-sizing: border-box;
+    border: none;
+  }
+
+  .medida1{
+    height: 13%;
+
+  }
+
+  .medida2{
+    height: 87%;
+  }
